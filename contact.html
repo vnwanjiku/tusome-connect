@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Tusome Connect for inquiries, support, or collaborations to improve education in Kenya.">
+  <meta name="description" content="Get in touch with Tusome Connect to learn more about how we can work together to improve education access in Kenya.">
   <title>Contact Us | Tusome Connect</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
 <header>
   <nav class="navbar">
-    <a href="index.html" class="logo">Tusome Connect</a>
+    <a href="index.html" class="logo"><span class="bold-logo">Tusome</span> Connect</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -22,15 +25,40 @@
 </header>
 
 <main>
-  <section class="contact">
-    <h1>Contact Tusome Connect</h1>
-    <p>If you have any questions, need support, or are interested in collaborating with us, don't hesitate to reach out.</p>
+  <section class="contact-form">
+    <h1>Get in Touch</h1>
+    <p>We'd love to hear from you! Whether you're a parent, teacher, or partner, let us know how we can assist you.</p>
+    <form action="#" method="POST" id="contactForm">
+      <div class="form-field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
 
-    <ul>
-      <li><strong>Email:</strong> info@tusomeconnect.co.ke</li>
-      <li><strong>Phone:</strong> +254 700 123 456</li>
-      <li><strong>Location:</strong> Nairobi, Kenya</li>
-    </ul>
+  <section class="contact-info">
+    <h2>Our Contact Information</h2>
+    <div class="info-card">
+      <i class="fas fa-location-arrow"></i>
+      <p>123 Tusome Lane, Nairobi, Kenya</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-phone-alt"></i>
+      <p>(+254) 700-123-456</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-envelope"></i>
+      <p>contact@tusomeconnect.org</p>
+    </div>
   </section>
 </main>
 
