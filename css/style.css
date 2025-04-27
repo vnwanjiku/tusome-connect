@@ -22,7 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007f5f;
+  background-color: #007bff; /* Blue */
   padding: 20px 30px;
 }
 
@@ -53,7 +53,7 @@ a {
 
 /* Hero section */
 .hero {
-  background: #00a86b;
+  background: #0056b3; /* Darker Blue */
   color: white;
   text-align: center;
   padding: 80px 20px;
@@ -65,7 +65,7 @@ a {
 }
 
 .cta-button {
-  background-color: #007f5f;
+  background-color: #007bff; /* Blue */
   padding: 10px 20px;
   color: white;
   border-radius: 5px;
@@ -75,7 +75,7 @@ a {
 }
 
 .cta-button:hover {
-  background-color: #005a45;
+  background-color: #0056b3; /* Darker Blue */
 }
 
 /* Features section */
@@ -100,7 +100,7 @@ a {
 }
 
 .feature i {
-  color: #007f5f;
+  color: #007bff; /* Blue */
   transition: transform 0.3s;
 }
 
@@ -135,7 +135,7 @@ a {
 
 /* Footer */
 footer {
-  background: #007f5f;
+  background: #007bff; /* Blue */
   text-align: center;
   padding: 20px;
   color: white;
