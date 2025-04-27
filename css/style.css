@@ -26,6 +26,16 @@ a {
   padding: 20px 30px;
 }
 
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.bold-logo {
+  font-weight: 900;  /* Make "Tusome" bold */
+}
+
 .nav-links {
   display: flex;
   gap: 20px;
@@ -34,6 +44,7 @@ a {
 .nav-links a {
   color: #fff;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
@@ -49,7 +60,8 @@ a {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .cta-button {
@@ -59,6 +71,7 @@ a {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s;
+  margin-top: 20px;
 }
 
 .cta-button:hover {
@@ -71,21 +84,56 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding: 40px;
+  text-align: center;
 }
 
 .feature {
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .feature h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 1.75rem;
+  margin-top: 20px;
 }
 
+.feature i {
+  color: #007f5f;
+  transition: transform 0.3s;
+}
+
+.feature:hover i {
+  transform: scale(1.1);
+}
+
+/* Image placeholders section */
+.image-placeholder {
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.image-placeholder h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
 footer {
   background: #007f5f;
   text-align: center;
@@ -98,5 +146,9 @@ footer {
 @media (max-width: 768px) {
   .features {
     grid-template-columns: 1fr;
+  }
+
+  .image-container {
+    flex-direction: column;
   }
 }
