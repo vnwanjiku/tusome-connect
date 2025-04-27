@@ -7,11 +7,12 @@ body {
   color: #333;
 }
 
+/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003366;
+  background-color: #003366; /* Navy Blue */
   padding: 20px 30px;
   position: sticky;
   top: 0;
@@ -36,25 +37,78 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ffd700;
+  color: #ffd700; /* Gold */
 }
 
-/* About Section */
-.about {
+/* About Container */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 60px 20px;
-  text-align: center;
+  background-color: #fff;
 }
 
-.about-content h1 {
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h1 {
   font-size: 3rem;
+  color: #003366;
   margin-bottom: 20px;
 }
 
-.about-content p {
+.about-text p {
   font-size: 1.2rem;
   color: #666;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+  background-color: #003366;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.mission-vision .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+  flex: 1;
+  max-width: 500px;
+}
+
+.mission-vision h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mission-vision p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /* Footer */
